@@ -9,12 +9,12 @@ class Owner
   
   def countdown
     today = Date.today
-    birthday = Date.ndw)today.year, birthdate.month, birthdate.day)
+    birthday = Date.new(today.year, birthdate.month, birthdate.day)
 
-if birthday > today
-  countdown = (birthday - today).to_i
-else
-  countdown = (borthday - today).to_i
-end
-end   
+    if birthday > today
+      countdown = (birthday - today).to_i
+    else
+      countdown = (birthday - today).to_i
+    end
+  end   
 end
